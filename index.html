@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夏日圖書館的邂逅 - 互動戀愛故事</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="container">
+        <!-- 開始畫面 -->
+        <div id="start-screen" class="screen active">
+            <h1 class="title">夏日圖書館的邂逅</h1>
+            <p class="intro">
+                那是一個蟬鳴不斷的午後，陽光透過圖書館的百葉窗，灑在靜謐的書架間。<br>
+                一段意想不到的故事，即將在那排深處的書架旁展開...
+            </p>
+            <button id="start-btn" class="btn-primary">開始故事</button>
+        </div>
+
+        <!-- 故事畫面 -->
+        <div id="story-screen" class="screen">
+            <div class="story-card">
+                <div id="story-text" class="content-text"></div>
+                <div id="choices-container" class="choices-box"></div>
+            </div>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- 結局畫面 -->
+        <div id="end-screen" class="screen">
+            <div class="end-card">
+                <span class="end-label">結局揭曉</span>
+                <h2 id="end-title" class="end-title"></h2>
+                <div id="end-desc" class="content-text"></div>
+                <button id="restart-btn" class="btn-primary">重新開始故事</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
